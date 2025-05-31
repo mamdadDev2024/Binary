@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Units;
+namespace Tests\Futures;
 
 use Nobody\BinaryTool\Enums\Byte;
 use Nobody\BinaryTool\Enums\Endian;
-use Nobody\BinaryTool\Facades\Binary;
 use PHPUnit\Framework\TestCase;
+use Nobody\BinaryTool\Facades\Binary;
 
-class EndianessTest extends TestCase
+class EndianTest extends TestCase
 {
     public function testBigEndian()
     {

@@ -2,6 +2,7 @@
 
 namespace Nobody\BinaryTool\Facades;
 
+use GMP;
 use Nobody\BinaryTool\BinaryTool;
 use Nobody\BinaryTool\Enums\Byte;
 use Nobody\BinaryTool\Enums\Endian;
@@ -10,7 +11,7 @@ use Nobody\BinaryTool\Factories\BinaryStrategyFactory;
 final class Binary
 {
 
-    public static function pack(int $number, Byte $bytes = Byte::FOUR, Endian $endian = Endian::BIG, ?bool $signed = null): string
+    public static function pack(int|string|GMP $number, Byte $bytes = Byte::FOUR, Endian $endian = Endian::BIG, ?bool $signed = null): string
     {
         if ($signed === null) {
             $signed = $number < 0;
@@ -30,7 +31,7 @@ final class Binary
         }
 
         $strategy = BinaryStrategyFactory::make($signed, $bytes, $endian);
-        $tool = new BinaryTool($strategy, $bytes);
+        $tool = BinaryTool::create($strategy, $bytes);
 
         return $tool->unpack($binary);
     }

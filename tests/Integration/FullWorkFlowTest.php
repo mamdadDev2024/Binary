@@ -1,0 +1,20 @@
+<?php
+
+namespace Tests\Integration;
+
+use Nobody\BinaryTool\Enums\Byte;
+use Nobody\BinaryTool\Enums\Endian;
+use PHPUnit\Framework\TestCase;
+use Nobody\BinaryTool\Facades\Binary;
+
+class FullWorkflowTest extends TestCase
+{
+    public function testFullPackUnpackWorkflow()
+    {
+        $value = gmp_init('987654321987654321987654321');
+        $packed = Binary::pack($value, Byte::CUSTOM, Endian::BIG, false);
+        $unpacked = Binary::unpack($packed, Byte::CUSTOM, Endian::BIG, false);
+
+        $this->assertEquals(gmp_strval($value), gmp_strval($unpacked));
+    }
+}

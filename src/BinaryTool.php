@@ -2,6 +2,7 @@
 
 namespace Nobody\BinaryTool;
 
+use GMP;
 use Nobody\BinaryTool\Strategies\BinaryStrategy;
 
 use Nobody\BinaryTool\Enums\Byte;
@@ -18,7 +19,7 @@ class BinaryTool
         return new self($strategy, $bytes);
     }
 
-    public function pack(int $number): string
+    public function pack(int|string|GMP $number): string
     {
         return $this->binaryStrategy->pack($number, $this->bytes);
     }

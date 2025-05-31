@@ -2,6 +2,7 @@
 
 namespace Nobody\BinaryTool\Contracts;
 
+use GMP;
 use Nobody\BinaryTool\Enums\Byte;
 use Nobody\BinaryTool\Enums\Endian;
 use Nobody\BinaryTool\Strategies\BinaryStrategy;
@@ -13,7 +14,7 @@ class BigBinaryConvertor implements BinaryStrategy
         protected Endian $endian=Endian::BIG,
     ) {}
 
-    public function pack(int $number , Byte $bytes): string
+    public function pack(int|string|GMP $number , Byte $bytes): string
     {
         $gmp = gmp_init($number, 10);
         $binary = gmp_export($gmp);
