@@ -18,7 +18,7 @@ class StrategySelectionTest extends TestCase
     public function testStrategySelectionForBigNumber()
     {
         $value = gmp_init('987654321987654321987654321');
-        $packed = Binary::pack($value, Byte::CUSTOM);
+        $packed = Binary::pack($value, Byte::SIXTEEN);
         $this->assertNotEmpty($packed);
     }
 }
