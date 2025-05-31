@@ -7,7 +7,7 @@ use Nobody\BinaryTool\Enums\Endian;
 use Nobody\BinaryTool\Facades\Binary;
 use PHPUnit\Framework\TestCase;
 
-class Endianess extends TestCase
+class EndianessTest extends TestCase
 {
     public function testBigEndian()
     {

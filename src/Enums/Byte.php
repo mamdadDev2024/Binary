@@ -6,6 +6,6 @@ enum Byte: int
 {
     case TWO=2;
     case FOUR=4;
-    case EIGHT=6;
+    case EIGHT=8;
     case CUSTOM=16;
 }

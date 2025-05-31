@@ -9,8 +9,8 @@ use Nobody\BinaryTool\Strategies\BinaryStrategy;
 class BigBinaryConvertor implements BinaryStrategy
 {
     public function __construct(
-        protected bool $signed,
-        protected Endian $endian,
+        protected bool $signed=false,
+        protected Endian $endian=Endian::BIG,
     ) {}
 
     public function pack(int $number , Byte $bytes): string
