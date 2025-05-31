@@ -24,15 +24,34 @@ final class Binary
     }
 
 
-    public static function unpack(string $binary, Byte $bytes = Byte::FOUR, Endian $endian = Endian::BIG, ?bool $signed = null): string
-    {
-        if ($signed === null) {
-            $signed = false;
-        }
-
-        $strategy = BinaryStrategyFactory::make($signed, $bytes, $endian);
-        $tool = BinaryTool::create($strategy, $bytes);
-
-        return $tool->unpack($binary);
+public static function unpack(string $binary, Byte|int|null $bytes = null, Endian $endian = Endian::BIG, ?bool $signed = null): string
+{
+    if ($signed === null) {
+        $signed = false;
     }
+
+    if ($bytes === null) {
+        $length = strlen($binary);
+
+        if (in_array($length, array_column(Byte::cases(), 'value'), true)) {
+            $bytes = Byte::from($length);
+        } else {
+            throw new \InvalidArgumentException("Invalid byte size: $length. Must be one of the defined Byte enum values.");
+        }
+    }
+
+    if (is_int($bytes)) {
+        if (in_array($bytes, array_column(Byte::cases(), 'value'), true)) {
+            $bytes = Byte::from($bytes);
+        } else {
+            throw new \InvalidArgumentException("Invalid byte size: $bytes. Must be one of the defined Byte enum values.");
+        }
+    }
+
+    $strategy = BinaryStrategyFactory::make($signed, $bytes, $endian);
+    $tool = BinaryTool::create($strategy, $bytes);
+
+    return $tool->unpack($binary);
+}
+
 }
