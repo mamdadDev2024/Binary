@@ -3,17 +3,17 @@
 namespace mamdaDev\BinaryTool\Contracts;
 
 use GMP;
+use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
 use mamdaDev\BinaryTool\Enums\Byte;
 use mamdaDev\BinaryTool\Enums\Endian;
-use mamdaDev\BinaryTool\Strategies\BinaryStrategy;
 
 /**
  * این کلاس برای تبدیل عدد استاندار به باینری و برعکس است با استفاده از متد های pack\unpack که یک استراتژی برای تبدیل می باشد
  */
-class SmallBinaryConvertor implements BinaryStrategy
+class PackConvertor implements BinaryStrategy
 {
     /**
-     * این کلاس هم مانند کلاس BigBinaryConvertor دو آرگومان دریافت می کند که البته در هر دوکلاس اختیاری می باشد
+     * این کلاس هم مانند کلاس GMPConvertor دو آرگومان دریافت می کند که البته در هر دوکلاس اختیاری می باشد
      * @param bool $signed
      * @param \mamdaDev\BinaryTool\Enums\Endian $endian
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Strategies;
+namespace mamdaDev\BinaryTool\Contracts\Strategies;
 
 use GMP;
 use mamdaDev\BinaryTool\Enums\Byte;

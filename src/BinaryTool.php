@@ -3,8 +3,7 @@
 namespace mamdaDev\BinaryTool;
 
 use GMP;
-use mamdaDev\BinaryTool\Strategies\BinaryStrategy;
-
+use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
 use mamdaDev\BinaryTool\Enums\Byte;
 
 class BinaryTool

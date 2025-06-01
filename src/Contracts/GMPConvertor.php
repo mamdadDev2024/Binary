@@ -3,16 +3,16 @@
 namespace mamdaDev\BinaryTool\Contracts;
 
 use GMP;
+use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
 use mamdaDev\BinaryTool\Enums\Byte;
 use mamdaDev\BinaryTool\Enums\Endian;
-use mamdaDev\BinaryTool\Strategies\BinaryStrategy;
 
 /**
  * این کلاس برای تبدیل اعداد غیر استاندارد از نظر طول است و از افزونه GMP(Gnu Multiple Presition) است
  * که یک استراتژی برای تبدیل می باشد
  * اینجا یه مشکلی داشتم که امیدوارم راه حلش خیلی بد نبوده باشه . آرگومان byte در این متد ها بلا استفاده است و نقض اصل Liskov است
  */
-class BigBinaryConvertor implements BinaryStrategy
+class GMPConvertor implements BinaryStrategy
 {
     /**
      * این کلاس هنگام ایجاد نمونه دو آرگومان دریافت می کند که یعنی منفی بودن آن است و یکی اندین

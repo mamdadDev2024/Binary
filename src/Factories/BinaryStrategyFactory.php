@@ -2,11 +2,11 @@
 
 namespace mamdaDev\BinaryTool\Factories;
 
-use mamdaDev\BinaryTool\Contracts\BigBinaryConvertor;
-use mamdaDev\BinaryTool\Contracts\SmallBinaryConvertor;
+use mamdaDev\BinaryTool\Contracts\GMPConvertor;
+use mamdaDev\BinaryTool\Contracts\PackConvertor;
+use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
 use mamdaDev\BinaryTool\Enums\Byte;
 use mamdaDev\BinaryTool\Enums\Endian;
-use mamdaDev\BinaryTool\Strategies\BinaryStrategy;
 
 /**
  * این کلاس برای ساخت کلاس تبدیل کننده بر اساس اندازه و طول بایت ها است
@@ -20,8 +20,8 @@ final class BinaryStrategyFactory
         }
 
         return $bytes->value > 8
-            ? new BigBinaryConvertor($signed, $endian)
-            : new SmallBinaryConvertor($signed, $endian);
+            ? new GMPConvertor($signed, $endian)
+            : new PackConvertor($signed, $endian);
     }
 }
 
