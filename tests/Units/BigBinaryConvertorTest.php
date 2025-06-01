@@ -2,8 +2,8 @@
 
 namespace Tests\Units;
 
-use Nobody\BinaryTool\Contracts\BigBinaryConvertor;
-use Nobody\BinaryTool\Enums\Byte;
+use mamdaDev\BinaryTool\Contracts\BigBinaryConvertor;
+use mamdaDev\BinaryTool\Enums\Byte;
 
 use PHPUnit\Framework\TestCase;
 

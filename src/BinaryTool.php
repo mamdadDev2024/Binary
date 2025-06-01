@@ -1,11 +1,11 @@
 <?php
 
-namespace Nobody\BinaryTool;
+namespace mamdaDev\BinaryTool;
 
 use GMP;
-use Nobody\BinaryTool\Strategies\BinaryStrategy;
+use mamdaDev\BinaryTool\Strategies\BinaryStrategy;
 
-use Nobody\BinaryTool\Enums\Byte;
+use mamdaDev\BinaryTool\Enums\Byte;
 
 class BinaryTool
 {

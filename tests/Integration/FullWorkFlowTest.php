@@ -2,10 +2,10 @@
 
 namespace Tests\Integration;
 
-use Nobody\BinaryTool\Enums\Byte;
-use Nobody\BinaryTool\Enums\Endian;
+use mamdaDev\BinaryTool\Enums\Byte;
+use mamdaDev\BinaryTool\Enums\Endian;
 use PHPUnit\Framework\TestCase;
-use Nobody\BinaryTool\Facades\Binary;
+use mamdaDev\BinaryTool\Facades\Binary;
 
 class FullWorkflowTest extends TestCase
 {

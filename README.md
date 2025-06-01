@@ -14,7 +14,7 @@ A clean and efficient PHP library for binary data conversion, using the **Strate
 Install via Composer:
 
 ```bash
-composer require nobody/binary-tool
+composer require mamdaDev/binary-tool
 ```
 
 ---
@@ -22,7 +22,7 @@ composer require nobody/binary-tool
 ## 🚀 Quick Start: Usage via Facade
 
 ```php
-use Nobody\BinaryTool\Binary;
+use mamdaDev\BinaryTool\Binary;
 
 // Pack a 4-byte signed integer (little-endian)
 $binary = Binary::pack(123456, 4, true, 'little');
@@ -143,7 +143,7 @@ vendor/bin/phpunit
 
 The project uses:
 
-- Namespace: `Nobody\BinaryTool`
+- Namespace: `mamdaDev\BinaryTool`
 - Clean separation of:
   - **Facade**: `Binary`
   - **Contracts**: Strategy interface

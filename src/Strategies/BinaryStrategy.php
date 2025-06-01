@@ -1,9 +1,9 @@
 <?php
 
-namespace Nobody\BinaryTool\Strategies;
+namespace mamdaDev\BinaryTool\Strategies;
 
 use GMP;
-use Nobody\BinaryTool\Enums\Byte;
+use mamdaDev\BinaryTool\Enums\Byte;
 
 interface BinaryStrategy
 {

@@ -1,10 +1,10 @@
 {
-    "name": "nobody/binary-tool",
+    "name": "mamdaddev/binary-tool",
     "description": "this is a toolkit for convert integer to binary and reverse",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Nobody\\BinaryTool\\": "src/",
+            "mamdaDev\\BinaryTool\\": "src/",
             "Tests\\": "tests"
         }
     },

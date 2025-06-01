@@ -1,7 +1,10 @@
 <?php
 
-namespace Nobody\BinaryTool\Enums;
+namespace mamdaDev\BinaryTool\Enums;
 
+/**
+ * این شمارنده برای اعتبار سنجی و ساده سازی وردی متد های سطح بالا است
+ */
 enum Byte: int
 {
     case TWO = 2;

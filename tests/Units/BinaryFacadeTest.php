@@ -2,9 +2,9 @@
 
 namespace Tests\Units;
 
-use Nobody\BinaryTool\Enums\Byte;
-use Nobody\BinaryTool\Enums\Endian;
-use Nobody\BinaryTool\Facades\Binary;
+use mamdaDev\BinaryTool\Enums\Byte;
+use mamdaDev\BinaryTool\Enums\Endian;
+use mamdaDev\BinaryTool\Facades\Binary;
 use PHPUnit\Framework\TestCase;
 
 class BinaryFacadeTest extends TestCase
