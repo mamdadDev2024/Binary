@@ -3,7 +3,7 @@
 A clean and efficient PHP library for binary data conversion, using the **Strategy** design pattern for automatic selection between small and large binary handlers. Supports both **pack/unpack** for native data sizes and **GMP-based** operations for arbitrary precision.
 
 ---
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/mamdadDev2024/Binary)
 ## 🛠 Installation and Requirements
 
 **Requirements:**
