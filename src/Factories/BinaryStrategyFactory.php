@@ -1,12 +1,12 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Factories;
+namespace mamdadDev\BinaryTool\Factories;
 
-use mamdaDev\BinaryTool\Contracts\GMPConvertor;
-use mamdaDev\BinaryTool\Contracts\PackConvertor;
-use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Contracts\GMPConvertor;
+use mamdadDev\BinaryTool\Contracts\PackConvertor;
+use mamdadDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
 
 /**
  * این کلاس برای ساخت کلاس تبدیل کننده بر اساس اندازه و طول بایت ها است

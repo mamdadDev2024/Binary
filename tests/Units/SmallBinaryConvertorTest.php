@@ -2,8 +2,8 @@
 
 namespace Tests\Units;
 
-use mamdaDev\BinaryTool\Contracts\PackConvertor;
-use mamdaDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Contracts\PackConvertor;
+use mamdadDev\BinaryTool\Enums\Byte;
 use PHPUnit\Framework\TestCase;
 
 class SmallBinaryConvertorTest extends TestCase

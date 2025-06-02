@@ -1,10 +1,10 @@
 <?php
 
-namespace mamdaDev\BinaryTool;
+namespace mamdadDev\BinaryTool;
 
 use GMP;
-use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
-use mamdaDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
+use mamdadDev\BinaryTool\Enums\Byte;
 
 class BinaryTool
 {

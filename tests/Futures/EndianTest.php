@@ -2,10 +2,10 @@
 
 namespace Tests\Futures;
 
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
 use PHPUnit\Framework\TestCase;
-use mamdaDev\BinaryTool\Facades\Binary;
+use mamdadDev\BinaryTool\Facades\Binary;
 
 class EndianTest extends TestCase
 {

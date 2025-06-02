@@ -1,11 +1,11 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Contracts;
+namespace mamdadDev\BinaryTool\Contracts;
 
 use GMP;
-use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
 
 /**
  * این کلاس برای تبدیل عدد استاندار به باینری و برعکس است با استفاده از متد های pack\unpack که یک استراتژی برای تبدیل می باشد
@@ -15,14 +15,14 @@ class PackConvertor implements BinaryStrategy
     /**
      * این کلاس هم مانند کلاس GMPConvertor دو آرگومان دریافت می کند که البته در هر دوکلاس اختیاری می باشد
      * @param bool $signed
-     * @param \mamdaDev\BinaryTool\Enums\Endian $endian
+     * @param \mamdadDev\BinaryTool\Enums\Endian $endian
      */
     public function __construct(protected bool $signed, protected Endian $endian = Endian::BIG) {}
 
     /**
      * این متد برای تبدیل مبنای 10 به 2 با استفاده از pack است
      * @param int|string|\GMP $number
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
      * @return string
      */
     public function pack(int|string|GMP $number, Byte $bytes): string
@@ -34,7 +34,7 @@ class PackConvertor implements BinaryStrategy
     /**
      * این متد هم بر عکس متد قبلی
      * @param string $binary
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
      * @return string
      */
     public function unpack(string $binary, Byte $bytes): string
@@ -48,8 +48,8 @@ class PackConvertor implements BinaryStrategy
     /**
      * این متد برای بدست آوردن فرمت مناسب بر اساس پارامتر های مربوط به عدد می باشد
      * @param bool $signed
-     * @param \mamdaDev\BinaryTool\Enums\Endian $endian
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Endian $endian
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
      * @throws \InvalidArgumentException
      * @return string
      */

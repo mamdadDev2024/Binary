@@ -2,8 +2,8 @@
 
 namespace Tests\Units;
 
-use mamdaDev\BinaryTool\Contracts\GMPConvertor;
-use mamdaDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Contracts\GMPConvertor;
+use mamdadDev\BinaryTool\Enums\Byte;
 
 use PHPUnit\Framework\TestCase;
 

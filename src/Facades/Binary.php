@@ -1,13 +1,13 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Facades;
+namespace mamdadDev\BinaryTool\Facades;
 
 use GMP;
-use mamdaDev\BinaryTool\BinaryTool;
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
-use mamdaDev\BinaryTool\Factories\BinaryFactory;
-use mamdaDev\BinaryTool\Factories\BinaryStrategyFactory;
+use mamdadDev\BinaryTool\BinaryTool;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Factories\BinaryFactory;
+use mamdadDev\BinaryTool\Factories\BinaryStrategyFactory;
 
 /**
  * این کلاس یه Facade برای تبدیل و مهیا سازی هدف اصلی پروژه به صورت ساده و کم حجم از نظر تعداد کاراکتر ها می باشد
@@ -18,8 +18,8 @@ final class Binary
     /**
      * برای تبدیل عدد مبنای 10 به 2 و برسی ورودی ها و مقادیر پیش فرض دادن به آنها و انتخاب استراتژی مناسب است
      * @param int|string|\GMP $number
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
-     * @param \mamdaDev\BinaryTool\Enums\Endian $endian
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Endian $endian
      * @param mixed $signed
      * @return string
      */
@@ -38,8 +38,8 @@ final class Binary
     /**
      * بر عکس متد قبلی
      * @param string $binary
-     * @param \mamdaDev\BinaryTool\Enums\Byte|int|null $bytes
-     * @param \mamdaDev\BinaryTool\Enums\Endian $endian
+     * @param \mamdadDev\BinaryTool\Enums\Byte|int|null $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Endian $endian
      * @param mixed $signed
      * @throws \InvalidArgumentException
      * @return string

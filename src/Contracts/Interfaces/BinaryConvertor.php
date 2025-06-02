@@ -1,6 +1,6 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Contracts\Interfaces;
+namespace mamdadDev\BinaryTool\Contracts\Interfaces;
 
 interface BinaryConvertor
 {

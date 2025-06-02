@@ -2,9 +2,9 @@
 
 namespace Tests\Futures;
 
-use mamdaDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Byte;
 use PHPUnit\Framework\TestCase;
-use mamdaDev\BinaryTool\Facades\Binary;
+use mamdadDev\BinaryTool\Facades\Binary;
 
 class StrategySelectionTest extends TestCase
 {

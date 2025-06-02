@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use PHPUnit\Framework\TestCase;
-use mamdaDev\BinaryTool\Facades\Binary;
+use mamdadDev\BinaryTool\Facades\Binary;
 use TypeError;
 
 class ByteSizeValidationTest extends TestCase

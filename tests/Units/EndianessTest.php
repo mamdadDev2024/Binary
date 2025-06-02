@@ -2,9 +2,9 @@
 
 namespace Tests\Units;
 
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
-use mamdaDev\BinaryTool\Facades\Binary;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Facades\Binary;
 use PHPUnit\Framework\TestCase;
 
 class EndianessTest extends TestCase

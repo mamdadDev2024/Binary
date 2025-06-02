@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "mamdaDev\\BinaryTool\\": "src/",
+            "mamdadDev\\BinaryTool\\": "src/",
             "Tests\\": "tests"
         }
     },

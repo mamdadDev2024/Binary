@@ -1,6 +1,6 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Enums;
+namespace mamdadDev\BinaryTool\Enums;
 
 /**
  * این شمارنده برای اعتبار سنجی و ساده سازی وردی متد های سطح بالا است

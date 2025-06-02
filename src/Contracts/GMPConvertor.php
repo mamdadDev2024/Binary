@@ -1,11 +1,11 @@
 <?php
 
-namespace mamdaDev\BinaryTool\Contracts;
+namespace mamdadDev\BinaryTool\Contracts;
 
 use GMP;
-use mamdaDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
-use mamdaDev\BinaryTool\Enums\Byte;
-use mamdaDev\BinaryTool\Enums\Endian;
+use mamdadDev\BinaryTool\Contracts\Strategies\BinaryStrategy;
+use mamdadDev\BinaryTool\Enums\Byte;
+use mamdadDev\BinaryTool\Enums\Endian;
 
 /**
  * این کلاس برای تبدیل اعداد غیر استاندارد از نظر طول است و از افزونه GMP(Gnu Multiple Presition) است
@@ -17,7 +17,7 @@ class GMPConvertor implements BinaryStrategy
     /**
      * این کلاس هنگام ایجاد نمونه دو آرگومان دریافت می کند که یعنی منفی بودن آن است و یکی اندین
      * @param bool $signed
-     * @param \mamdaDev\BinaryTool\Enums\Endian $endian
+     * @param \mamdadDev\BinaryTool\Enums\Endian $endian
      */
     public function __construct(
         protected bool $signed=false,
@@ -27,7 +27,7 @@ class GMPConvertor implements BinaryStrategy
     /**
      * این متد برای دریافت عدد مبنای 10 غیر استاندارد به صورت عدد یا رشته و یا GMP است
      * @param int|string|\GMP $number
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
      * @return string
      */
     public function pack(int|string|GMP $number , Byte $bytes): string
@@ -40,7 +40,7 @@ class GMPConvertor implements BinaryStrategy
     /**
      * این متد برای تبدیل باینری به مبنای 10 است . با استفاده از افزونه GMP
      * @param string $binary
-     * @param \mamdaDev\BinaryTool\Enums\Byte $bytes
+     * @param \mamdadDev\BinaryTool\Enums\Byte $bytes
      * @return string
      */
     public function unpack(string $binary , Byte $bytes): string
